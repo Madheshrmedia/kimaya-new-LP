@@ -1371,7 +1371,7 @@
 
 <!-- other services -->
 
-<div class="container other_service my-5">
+<div class="container other_service my-5" id="service">
 
     <h1 class="oserhead mb-5">
         Glow with our other Services
