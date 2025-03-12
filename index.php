@@ -1568,8 +1568,10 @@ console.log("name",skinConcern);
                     <div class="clock-seconds clock-timer">&nbsp;</div>
                     <div class="clock-label label-seconds">Seconds</div>
                 </div>
-                <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
+                <a type="button" href="./#book_app_id" class="btn btn-secondary" style="bottom: -10px;"
+                    id="bookbutton">Book an
                     Appointment</a>
+                <span class="popbtnspan"></span>
             </div>
         </div>
     </div>
