@@ -571,6 +571,12 @@
     </div>
 
 
+    <!-- mobile banner -->
+    <div class="container-fluid mob-banner">
+        <img src="./image/mob1.webp" class="img-fluid" alt="best clinic ">
+    </div>
+
+
 
     <!-- Get celebrity smooth skin -->
     <div class="container">
