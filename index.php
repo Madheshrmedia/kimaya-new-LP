@@ -1410,35 +1410,35 @@
     <div class="row">
         <div class="col-md-6 mx-auto book_app" id="book_app_id">
             <h2 class="text-center">Book An Appointment</h2>
-            <form action="#" method="post">
+            <form id="appointmentForm">
                 <div class="row">
                     <div class="col-md-12 mt-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="email" placeholder="Full name" required>
+                        <input type="text" class="form-control" id="name" placeholder="Full name" name="name" >
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" id="email" placeholder="Enter Phone No" required>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone" >
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="email" placeholder="Full name" required>
+                        <input type="date" class="form-control" id="date" placeholder="Full name" name="date" >
                     </div>
                     <div class="col-md-12 mt-3">
-                        <label for="date" class="form-label">Choose Branch</label>
+                    <label for="branch" class="form-label">Choose Branch</label>
 
-                        <select class="form-select " aria-label="Default select example" id="validationCustom04"
-                            required>
-                            <option value="Anna nagar">Anna nagar</option>
-                            <option value="Adyar">Adyar</option>
-                        </select>
+                    <select class="form-select" name="branch" id="branch" required>
+    <option value="">Select a Branch</option>  <!-- Ensure there's a default option -->
+    <option value="Anna nagar">Anna Nagar</option>
+    <option value="Adyar">Adyar</option>
+</select>
                         <div class="invalid-feedback">
                             Please select a location
                         </div>
                     </div>
                     <div class="col-md-12 mt-3">
-                        <label for="message" class="form-label">Type your skin concern</label>
-                        <textarea name="message" class="form-control" rows="3" cols="" id=""></textarea>
+                        <label for="skin_concern" class="form-label">Type your skin concern</label>
+                        <textarea name="skin_concern" class="form-control" rows="3" cols="" id="skin_concern"></textarea>
                     </div>
 
 
@@ -1447,6 +1447,54 @@
                     </div>
                 </div>
             </form>
+            <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("appointmentForm").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        submitForm();
+    });
+});
+
+async function submitForm() {
+    const name = document.getElementById("name")?.value;
+    const phone = document.getElementById("phone")?.value;
+    const date = document.getElementById("date")?.value;
+    const branch = document.getElementById("branch")?.value;
+    const skinConcern = document.getElementById("skin_concern").value;
+console.log("name",name);
+console.log("name",phone);
+console.log("name",date);
+console.log("name",branch);
+console.log("name",skinConcern);
+    if (!name ) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    const formData = { name, phone, date, branch, skin_concern: skinConcern };
+
+    try {
+        const response = await fetch("https://admin-backend.kimayaclinique.com/store-lplead", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            console.log("response",response);
+            
+            alert("Appointment confirmed successfully!");
+            document.getElementById("appointmentForm").reset();
+        } else {
+            alert("Failed to confirm appointment. Please try again.");
+        }
+    } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("An error occurred. Please try again.");
+    }
+}
+
+</script>
         </div>
     </div>
 </div>
@@ -1918,67 +1966,6 @@
     })()
 
 
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('.btn_pop').addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Retrieve form values
-            const name = document.querySelector('input[placeholder="Full name"]').value;
-            const phone = document.querySelector('input[placeholder="Enter Phone No"]').value;
-            const date = document.querySelector('input[type="date"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
-            const location = document.querySelector('select').value;
-
-
-            // Validate required fields
-            if (!name) {
-                alert("Please enter your full name.");
-                return;
-            }
-
-            if (!phone) {
-                alert("Please enter your phone number.");
-                return;
-            } else if (!/^\d{10}$/.test(phone)) {
-                alert("Please enter a valid 10-digit phone number.");
-                return;
-            }
-
-            if (!date) {
-                alert("Please select a date.");
-                return;
-            }
-
-            if (!location) {
-                alert("Please select a valid location.");
-                return;
-            }
-
-            // Determine WhatsApp number based on location
-            let whatsappNumber;
-            if (location === "Anna nagar") {
-                whatsappNumber = "+919884567000";
-            } else if (location === "Adyar") {
-                whatsappNumber = "+919884287000";
-            } else {
-                alert("Please select a valid location.");
-                return;
-            }
-
-            // Construct the WhatsApp message
-            const whatsappMessage = `This appointment is from the Landing Page.\n\nHello, I would like to confirm my appointment. \n\nName: ${name}\nPhone: ${phone}\nDate: ${date}\nMessage: ${message}\nLocation: ${location}`;
-
-            // Open WhatsApp with the drafted message
-            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappURL, '_blank');
-
-            // Store a flag in localStorage
-            setTimeout(() => {
-                location.reload();
-            }, 1000);
-
-        });
-    });
 
 
 
