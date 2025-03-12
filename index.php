@@ -775,6 +775,9 @@ margin:auto;
     #choosecontainer .row{
         margin-top:3rem;
     }
+    #kimroundlogo{
+        margin-bottom:20px; 
+    }
  </style>
  <div class="container" id="choosecontainer">
  <h1>Why choose Kimaya?</h1>
@@ -814,8 +817,8 @@ margin:auto;
 </div>
     </div>
     <div class="col-md-4 col-sm-12">
-    <div class="card" style="width: 50%;margin: auto;">
-  <img src="./image/kimroundlogo.webp" >
+    <div class="card" style="width: 220px;margin: auto;">
+  <img src="./image/kimroundlogo.webp" id="kimroundlogo">
 
 </div>
     </div>
