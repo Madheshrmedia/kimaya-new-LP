@@ -487,9 +487,10 @@
         }
 
         .card-footer {
-            background: #EFD78A;
+            background: #AF6503;
             border-bottom-left-radius: 13px !important;
             border-bottom-right-radius: 13px !important;
+            color: #FFFFFF !important;
         }
 
         .navbar-toggler {
@@ -622,63 +623,68 @@
     </div>
 
     <!-- This could be you! -->
+<style>
+   #testimonial{
+    text-align:center;
+   }
+   #testimonialrow{
+    margin-top:2rem;
+   }
+   .card-body{
+    text-align:left;
+   } 
+.card-img-top {
+    width: 35% !important;
+}
+</style>
+    <div class="container-fluid my-5 " id="testimonial">
+    <h1>Review</h1>
 
-    <div class="container-fluid my-5 this_testimonial" id="testimonial">
-        <div class="row p-5">
-            <h1>This could be you!</h1>
-
-            <div class="col-md-4 my-auto tis_test_col">
+        <div class="row p-5 " >
+           
+            <div class="col-md-4  tis_test_col">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc1.webp" alt="Card image cap">
+                    <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">Having wonderful experiences with the clinic stating off
-                            with my nails
-                            which always i get flawless and beautiful nails by Jenni akka my saviour. Seconding about
-                            skin treatments where I struggled with my acne for years didn’t find solution and not
-                            believed any treatments too. But the skin peeling treatment showed my skin which I use to
-                            have during my school days. Thanks kimaya!</p>
+                        <p class="card-text tis_test_card_txt ">The Brightening Peel made my skin glow! My dark spots have lightened, 
+                            and my skin looks so much healthier. I love the results and will definitely be coming back for more treatments!<span style="visibility:hidden">fdsffsfdsdffdsf</span></p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci1.png" class="tis_tci" alt="">
-                        <p class="ps-3">- Shruthi Chandrasekar </p>
+                        <p class="ps-3"> — Shalini P </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tis_test_col my-auto">
+            <div class="col-md-4 tis_test_col ">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc2.webp" alt="Card image cap">
+                <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I just had the most amazing facial experience! From
-                            start to finish, it was pure relaxation. The esthetician was knowledgeable and tailored the
-                            treatment to suit my skin type. My skin feels rejuvenated, hydrated, and so much smoother.
-                            The products used were high-quality and left a lovely glow without any irritation. It’s like
-                            my face got a fresh start! I highly recommend this facial to anyone looking to pamper
-                            themselves and give their skin the care it deserves.</p>
+                        <p class="card-text tis_test_card_txt ">I’ve struggled with acne for years, but the Acne Control Peel has helped 
+                            clear my skin. My breakouts are fewer, 
+                            and my complexion is smoother. I’m so happy with the progress I’ve seen.</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci2.webp" class="tis_tci" alt="">
-                        <p class="ps-3">-Preethika Palaniswamy</p>
+                        <p class="ps-3">-— Kiran T</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tis_test_col my-auto">
+            <div class="col-md-4 tis_test_col ">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc3.webp" alt="Card image cap">
+                <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I came to know about this place through my friend.. Came
-                            here to get consultation for my skin and was super happy with their warm welcome and their
-                            service . Admin Nandhini and Manager Aishwarya was soo professional and helped me with my
-                            package. Highly recommended place for all your skin and hair concern .</p>
+                        <p class="card-text tis_test_card_txt ">I tried the Anti-Aging Peel, and it worked wonders on my fine lines. My skin feels firmer, 
+                            and I can see a visible difference in its texture. I feel like I’ve turned back the clock on my skin!</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci3.png" class="tis_tci" alt="">
-                        <p class="ps-3">-A R M Vicky</p>
+                        <p class="ps-3">— Meena J</p>
                     </div>
                 </div>
             </div>
