@@ -516,7 +516,7 @@
 
 
 <body>
-  
+
     <header class="header header-sticky" id="headerall">
 
         <nav class="navbar navbar-expand-lg navbar-light shadow px-5 sticky-top">
@@ -561,41 +561,43 @@
     </header>
 
     <style>
-  .stickybuttons{
-    width: 100%;
-        position: fixed;
-        top:90%;
-        z-index: 2;
-    }
-    .stickybuttons button{
-        padding: 8px 25px;
-    border-radius: 50px;
-    border: 1px solid #FAD064;
-    background-color: #DDAB07;
-    }
-    .stickybuttons a{
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: 600;
-    }
+        .stickybuttons {
+            width: 100%;
+            position: fixed;
+            top: 90%;
+            z-index: 2;
+        }
+
+        .stickybuttons button {
+            padding: 8px 25px;
+            border-radius: 50px;
+            border: 1px solid #FAD064;
+            background-color: #DDAB07;
+        }
+
+        .stickybuttons a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
-  
+
     <div class="stickybuttons">
 
-<div class="row">
-    <div class="col-md-3 d-flex justify-content-center align-items-center">
-<button><a href="tel:+9884567000"><i class="bi bi-telephone-fill"></i> Call now</a></button>
-    </div>
-    <div class="col-md-3">
-        
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <button><a href="tel:+9884567000"><i class="bi bi-telephone-fill"></i> Call now</a></button>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <button><a href="#appointmentFormh">Book an Appointment</a></button>
+            </div>
         </div>
-        <div class="col-md-3">
-        
-        </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-        <button><a href="#appointmentFormh">Book an Appointment</a></button>
-        </div>
-</div>
     </div>
 
 
@@ -623,10 +625,18 @@
                         </h1>
                         <p class="get_cele_cont">
                             Tired of waxing and shaving? Our Unlimited Laser Hair Removal gives you long-lasting smooth
-                            skin by
-                            reducing hair growth at the root - completely pain-free! The laser targets hair follicles,
-                            heating
-                            them to prevent future growth while leaving the surrounding skin unharmed.
+                            skin by reducing hair growth at the root - completely pain-free!
+
+                        <ul>
+                            <li>⁠Pain-free & effective – Targets hair follicles to prevent regrowth
+                            </li>
+                            <li>Safe for all skin types – Leaves surrounding skin unharmed
+                            </li>
+                            <li>Covers all areas – Face, hands, legs, upper lips, chin & full body</li>
+                            <li>Best results in 6-8 sessions – Customized to your hair type & skin tone</li>
+
+                        </ul>
+
                         </p>
                     </div>
                     <div class="col-md-4 get_cele_img">
@@ -688,7 +698,7 @@
         }
     </style>
     <div class="container-fluid my-5 " id="testimonial">
-        <h1>Review</h1>
+        <h1>What Our Happy Client Says</h1>
 
         <div class="row p-5 ">
 
@@ -697,10 +707,12 @@
                     <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">The Brightening Peel made my skin glow! My dark spots
-                            have lightened,
-                            and my skin looks so much healthier. I love the results and will definitely be coming back
-                            for more treatments!<span style="visibility:hidden">fdsffsfdsdffdsf</span></p>
+                        <p class="card-text tis_test_card_txt ">I have been coming to Kimaya for the past six months for
+                            LHR facial laser hair reduction. It has worked wonders for me and I can see great results.
+                            This has definitely helped me boost my confidence and I have to convey my sincere thanks to
+                            who has done most of my LHR sessions here at Kimaya.
+                            <span style="visibility:hidden">fdsffsfdsdffdsf</span>
+                        </p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
@@ -714,15 +726,15 @@
                     <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I’ve struggled with acne for years, but the Acne Control
-                            Peel has helped
-                            clear my skin. My breakouts are fewer,
-                            and my complexion is smoother. I’m so happy with the progress I’ve seen.</p>
+                        <p class="card-text tis_test_card_txt ">Kimaya Clinique provides the best laser removal
+                            services. The doctor ensures that each treatment is tailored to individual needs. From my
+                            experience, the procedure is effective and gives long-lasting results. The clinic also
+                            maintains a clean and professional environment.</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci2.webp" class="tis_tci" alt="">
-                        <p class="ps-3">-— Kiran T</p>
+                        <p class="ps-3">-— Dhivya</p>
                     </div>
                 </div>
             </div>
@@ -731,15 +743,16 @@
                     <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I tried the Anti-Aging Peel, and it worked wonders on my
-                            fine lines. My skin feels firmer,
-                            and I can see a visible difference in its texture. I feel like I’ve turned back the clock on
-                            my skin!</p>
+                        <p class="card-text tis_test_card_txt ">I took laser hair removal treatment from kimaya,
+                            actually I was really afraid of the procedure but now it's super cool for me,just because of
+                            super cool machine.Its completely pain-free and stress-free and I'm getting best results
+                            .Definitely suggest to my friends and colleagues. And also I took KIMAYA GLOW THERAPY, It
+                            gives me a wonderful skin. LOVED IT!!</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci3.png" class="tis_tci" alt="">
-                        <p class="ps-3">— Meena J</p>
+                        <p class="ps-3">— Pushpa </p>
                     </div>
                 </div>
             </div>
@@ -1451,35 +1464,36 @@
                 <div class="row">
                     <div class="col-md-12 mt-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Full name" name="name" >
+                        <input type="text" class="form-control" id="name" placeholder="Full name" name="name">
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone" >
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone">
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="location" class="form-label">Location</label>
-                        <input type="text" class="form-control" id="location"  name="location" >
+                        <input type="text" class="form-control" id="location" name="location">
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date" placeholder="Full name" name="date" >
+                        <input type="date" class="form-control" id="date" placeholder="Full name" name="date">
                     </div>
                     <div class="col-md-12 mt-3">
-                    <label for="branch" class="form-label">Choose Branch</label>
+                        <label for="branch" class="form-label">Choose Branch</label>
 
-                    <select class="form-select" name="branch" id="branch" required>
-    <option value="">Select a Branch</option>  <!-- Ensure there's a default option -->
-    <option value="Anna nagar">Anna Nagar</option>
-    <option value="Adyar">Adyar</option>
-</select>
+                        <select class="form-select" name="branch" id="branch" required>
+                            <option value="">Select a Branch</option> <!-- Ensure there's a default option -->
+                            <option value="Anna nagar">Anna Nagar</option>
+                            <option value="Adyar">Adyar</option>
+                        </select>
                         <div class="invalid-feedback">
                             Please select a location
                         </div>
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="skin_concern" class="form-label">Type your skin concern</label>
-                        <textarea name="skin_concern" class="form-control" rows="3" cols="" id="skin_concern"></textarea>
+                        <textarea name="skin_concern" class="form-control" rows="3" cols=""
+                            id="skin_concern"></textarea>
                     </div>
 
 
@@ -1489,55 +1503,55 @@
                 </div>
             </form>
             <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("appointmentForm").addEventListener("submit", async function(event) {
-        event.preventDefault();
-        submitForm();
-    });
-});
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.getElementById("appointmentForm").addEventListener("submit", async function (event) {
+                        event.preventDefault();
+                        submitForm();
+                    });
+                });
 
-async function submitForm() {
-    const name = document.getElementById("name")?.value;
-    const phone = document.getElementById("phone")?.value;
-    const location = document.getElementById("location")?.value;
-    const date = document.getElementById("date")?.value;
-    const branch = document.getElementById("branch")?.value;
-    const skinConcern = document.getElementById("skin_concern").value;
-console.log("name",name);
-console.log("name",phone);
-console.log("name",date);
-console.log("name",branch);
-console.log("location",location);
-console.log("name",skinConcern);
-    if (!name ) {
-        alert("Please fill in all required fields.");
-        return;
-    }
+                async function submitForm() {
+                    const name = document.getElementById("name")?.value;
+                    const phone = document.getElementById("phone")?.value;
+                    const location = document.getElementById("location")?.value;
+                    const date = document.getElementById("date")?.value;
+                    const branch = document.getElementById("branch")?.value;
+                    const skinConcern = document.getElementById("skin_concern").value;
+                    console.log("name", name);
+                    console.log("name", phone);
+                    console.log("name", date);
+                    console.log("name", branch);
+                    console.log("location", location);
+                    console.log("name", skinConcern);
+                    if (!name) {
+                        alert("Please fill in all required fields.");
+                        return;
+                    }
 
-    const formData = { name, phone, date, branch, location,skin_concern: skinConcern };
+                    const formData = { name, phone, date, branch, location, skin_concern: skinConcern };
 
-    try {
-        const response = await fetch("https://admin-backend.kimayaclinique.com/store-lplead", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData)
-        });
+                    try {
+                        const response = await fetch("https://admin-backend.kimayaclinique.com/store-lplead", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(formData)
+                        });
 
-        if (response.ok) {
-            console.log("response",response);
-            
-            alert("Appointment confirmed successfully!");
-            document.getElementById("appointmentForm").reset();
-        } else {
-            alert("Failed to confirm appointment. Please try again.");
-        }
-    } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("An error occurred. Please try again.");
-    }
-}
+                        if (response.ok) {
+                            console.log("response", response);
 
-</script>
+                            alert("Appointment confirmed successfully!");
+                            document.getElementById("appointmentForm").reset();
+                        } else {
+                            alert("Failed to confirm appointment. Please try again.");
+                        }
+                    } catch (error) {
+                        console.error("Error submitting form:", error);
+                        alert("An error occurred. Please try again.");
+                    }
+                }
+
+            </script>
         </div>
     </div>
 </div>
@@ -1611,8 +1625,7 @@ console.log("name",skinConcern);
                     <div class="clock-seconds clock-timer">&nbsp;</div>
                     <div class="clock-label label-seconds">Seconds</div>
                 </div>
-                <a type="button" href="./#book_app_id" class="btn btn-secondary" style="bottom: -10px;"
-                    id="bookbutton">Book an
+                <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
                     Appointment</a>
                 <span class="popbtnspan"></span>
             </div>
@@ -1650,6 +1663,7 @@ console.log("name",skinConcern);
         /* Above the overlay */
         display: none;
         /* Initially hidden */
+        padding-bottom: 40px;
     }
 
     /* Close Button */
