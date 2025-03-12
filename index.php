@@ -1630,66 +1630,102 @@
     .accordion-button {
         font-size: 25px;
     }
+
+    /* Popup Box */
+    #coutpop {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        z-index: 1000;
+        /* Above the overlay */
+        display: none;
+        /* Initially hidden */
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #popupOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        /* Black with 70% transparency */
+        z-index: 999;
+        /* Below the popup but above everything else */
+        display: none;
+        /* Initially hidden */
+    }
 </style>
 <!-- ---end FAQ frame------------ -->
-<!-- ---start counter frame------------ -->
-<div class="background-container" id="counterframe">
-    <div class="content">
-        <div class="row">
-            <div class="column" id="colunm1">
-                <p style="visibility:hidden">Offer Expires in</p>
-                <h1 class="text">Special Discount</h1>
-                <button type="button" class="btn btn-secondary" id="limitbutton">Limited Time Only!</button>
-            </div>
-            <div class="column" id="colunm2">
-                <p>Offer Expires in</p>
-                <div class="clock-container">
-                    <div class="clock-col" style="display:none">
-                        <div class="clock-days clock-timer">&nbsp;</div>
-                        <div class="clock-label label-days">
-                            Days
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-hours clock-timer">&nbsp;</div>
-                        <div class="clock-label label-hour">
-                            Hours
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-minutes clock-timer">&nbsp;</div>
-                        <div class="clock-label label-minutes">
-                            Minutes
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-seconds clock-timer">&nbsp;</div>
-                        <div class="clock-label label-seconds">
-                            Seconds
-                        </div>
-                    </div>
-                    <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
-                        Appointment</a>
+
+
+<!-- counter popup -->
+
+<div id="popupOverlay"></div>
+
+<div class="row" id="coutpop">
+    <div class="col-md-12 mx-auto">
+        <div class="column" id="colunm2">
+            <span id="closePopup" class="close-btn">&times;</span> <!-- Close Button -->
+            <p>Offer Expires in</p>
+            <div class="clock-container">
+                <div class="clock-col" style="display:none">
+                    <div class="clock-days clock-timer">&nbsp;</div>
+                    <div class="clock-label label-days">Days</div>
                 </div>
-
+                <div class="clock-col">
+                    <div class="clock-hours clock-timer">&nbsp;</div>
+                    <div class="clock-label label-hour">Hours</div>
+                </div>
+                <div class="clock-col">
+                    <div class="clock-minutes clock-timer">&nbsp;</div>
+                    <div class="clock-label label-minutes">Minutes</div>
+                </div>
+                <div class="clock-col">
+                    <div class="clock-seconds clock-timer">&nbsp;</div>
+                    <div class="clock-label label-seconds">Seconds</div>
+                </div>
+                <a type="button" href="./#book_app_id" class="btn btn-secondary" style=" bottom: -10px;"
+                    id="bookbutton">Book an
+                    Appointment</a>
             </div>
-
         </div>
     </div>
 </div>
+
 <style>
+    .column p {
+        margin-top: 20px;
+        margin-bottom: -35px;
+        z-index: 1;
+        position: relative;
+    }
+
     .clock-container {
         position: relative;
         display: flex;
         gap: 51px;
         justify-content: center;
         border-radius: 8px;
-        color: #FFFFFF;
-        background-color: #000000;
+        color: black;
+        background-color: rgb(255, 255, 255);
         margin: auto;
         padding: 3rem;
-
         width: 100%;
+
     }
 
     #bookbutton {
@@ -1774,7 +1810,7 @@
     }
 
     .clock-label {
-        color: #FFC877;
+        color: #AF6503;
         text-transform: uppercase;
     }
 
@@ -2165,6 +2201,34 @@
 
         scheduleFrame(start);
     }
+
+    // popup open #
+    document.addEventListener("DOMContentLoaded", function () {
+        let popup = document.getElementById("coutpop");
+        let overlay = document.getElementById("popupOverlay");
+        let closeBtn = document.getElementById("closePopup");
+        let bookButton = document.getElementById("bookbutton"); // Get the button
+
+        // Show the popup and overlay when the page loads
+        popup.style.display = "block";
+        overlay.style.display = "block";
+
+        // Function to close the popup
+        function closePopup() {
+            popup.style.display = "none";
+            overlay.style.display = "none";
+        }
+
+        // Close when clicking the close button (X)
+        closeBtn.addEventListener("click", closePopup);
+
+        // Close when clicking anywhere on the overlay
+        overlay.addEventListener("click", closePopup);
+
+        // Close when clicking the "Book an Appointment" button
+        bookButton.addEventListener("click", closePopup);
+    });
+
 
 </script>
 
