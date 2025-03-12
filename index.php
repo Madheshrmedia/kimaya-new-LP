@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimaya Clinique</title>
     <!-- Favicon -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="./image/KimayaFavicon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -516,6 +516,7 @@
 
 
 <body>
+  
     <header class="header header-sticky" id="headerall">
 
         <nav class="navbar navbar-expand-lg navbar-light shadow px-5 sticky-top">
@@ -559,7 +560,42 @@
         </nav>
     </header>
 
+    <style>
+  .stickybuttons{
+    width: 100%;
+        position: fixed;
+        top:90%;
+    }
+    .stickybuttons button{
+        padding: 8px 25px;
+    border-radius: 50px;
+    border: 1px solid #FAD064;
+    background-color: #DDAB07;
+    }
+    .stickybuttons a{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    </style>
+  
+    <div class="stickybuttons">
 
+<div class="row">
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+<button><a href="tel:+9884567000"><i class="bi bi-telephone-fill"></i> Call now</a></button>
+    </div>
+    <div class="col-md-3">
+        
+        </div>
+        <div class="col-md-3">
+        
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <button><a href="#appointmentFormh">Book an Appointment</a></button>
+        </div>
+</div>
+    </div>
 
 
     <!-- banner -->
@@ -1409,7 +1445,7 @@
 
     <div class="row">
         <div class="col-md-6 mx-auto book_app" id="book_app_id">
-            <h2 class="text-center">Book An Appointment</h2>
+            <h2 class="text-center" id="appointmentFormh">Book An Appointment</h2>
             <form id="appointmentForm">
                 <div class="row">
                     <div class="col-md-12 mt-3">
@@ -1419,6 +1455,10 @@
                     <div class="col-md-12 mt-3">
                         <label for="phone" class="form-label">Phone</label>
                         <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone" >
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location"  name="location" >
                     </div>
                     <div class="col-md-12 mt-3">
                         <label for="date" class="form-label">Date</label>
@@ -1458,6 +1498,7 @@ document.addEventListener("DOMContentLoaded", function() {
 async function submitForm() {
     const name = document.getElementById("name")?.value;
     const phone = document.getElementById("phone")?.value;
+    const location = document.getElementById("location")?.value;
     const date = document.getElementById("date")?.value;
     const branch = document.getElementById("branch")?.value;
     const skinConcern = document.getElementById("skin_concern").value;
@@ -1465,13 +1506,14 @@ console.log("name",name);
 console.log("name",phone);
 console.log("name",date);
 console.log("name",branch);
+console.log("location",location);
 console.log("name",skinConcern);
     if (!name ) {
         alert("Please fill in all required fields.");
         return;
     }
 
-    const formData = { name, phone, date, branch, skin_concern: skinConcern };
+    const formData = { name, phone, date, branch, location,skin_concern: skinConcern };
 
     try {
         const response = await fetch("https://admin-backend.kimayaclinique.com/store-lplead", {
