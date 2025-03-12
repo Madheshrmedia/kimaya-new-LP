@@ -951,152 +951,7 @@
     }
 </style>
 <!-- ---end FAQ frame------------ -->
-<!-- ---start slider frame------------ -->
-<div class="container">
-    <h1>Glow Stories from Our Clients</h1>
-</div>
 
-
-<section class="base-template">
-    <div class="base-template__wrapper wrapper">
-
-
-        <div class="base-template__content">
-            <div class="booking-slider">
-
-                <!-- Slider Navigation -->
-
-                <div class="booking-slider__nav slider-nav">
-                    <div title="Newest offers" tabindex="0" class="slider-nav__item slider-nav__item_prev">
-                        <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 26L2 14L14 2" stroke="white" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div title="Oldest offers" tabindex="0" class="slider-nav__item slider-nav__item_next">
-                        <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 26L14 14L2 2" stroke="white" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Slider Content -->
-
-                <div class="booking-slider__slider swiper">
-                    <div class="booking-slider__wrapper swiper-wrapper">
-
-                        <!-- Slider: Slide 1 -->
-
-                        <div class="booking-slider__slide swiper-slide">
-                            <div class="booking-slider__item booking-slider-item">
-
-
-                                <a title="Luxury Detached Home in Bournemouth" href="/"
-                                    class="booking-slider-item__image" onclick="event.preventDefault();">
-                                    <img src="./image/slide1.webp" alt="slide1image" />
-                                </a>
-
-                                <div class="booking-slider-item__content">
-                                    <p>I’ve never felt more confident in my own skin! The Radiant Glow Transformation
-                                        Package gave me everything I needed – smooth skin, glowing complexion, and
-                                        healthier hair! The Gluta IV made my skin look brighter and more even, and I
-                                        love the results from the Laser Hair Removal. It’s so easy and effective!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider: Slide 2 -->
-
-                        <div class="booking-slider__slide swiper-slide">
-                            <div class="booking-slider__item booking-slider-item">
-
-
-                                <a title="Luxury Detached Home in Bournemouth" href="/"
-                                    class="booking-slider-item__image" onclick="event.preventDefault();">
-                                    <img src="./image/slide2.webp" alt="slide2image" />
-                                </a>
-
-                                <div class="booking-slider-item__content">
-                                    <p>This package truly transformed my appearance. The Advanced Glow Facial left my
-                                        skin feeling refreshed and rejuvenated, and I noticed a visible improvement in
-                                        my hair after the regrowth treatment. I can't believe how smooth and youthful my
-                                        face looks now. Highly recommend!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider: Slide 3 -->
-
-                        <div class="booking-slider__slide swiper-slide">
-                            <div class="booking-slider__item booking-slider-item">
-
-
-                                <a title="Luxury Detached Home in Bournemouth" href="/"
-                                    class="booking-slider-item__image" onclick="event.preventDefault();">
-                                    <img src="./image/slide3.webp" alt="slide3image" />
-                                </a>
-
-                                <div class="booking-slider-item__content">
-                                    <p>I can’t thank the team enough for this amazing experience! The Face Rejuvenation
-                                        Therapy worked wonders on my skin – it looks tighter and more radiant than ever
-                                        before. Plus, the unlimited Laser Hair Removal is a game changer. I'm finally
-                                        feeling more confident and glowing from the inside out!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider: Slide 4 -->
-
-                        <div class="booking-slider__slide swiper-slide">
-                            <div class="booking-slider__item booking-slider-item">
-
-
-                                <a title="Luxury Detached Home in Bournemouth" href="/"
-                                    class="booking-slider-item__image" onclick="event.preventDefault();">
-                                    <img src="./image/slide4.webp" alt="slide4image" />
-                                </a>
-
-                                <div class="booking-slider-item__content">
-                                    <p>PRP facial is pure magic! My skin feels firmer, my acne scars have faded, and I
-                                        have this youthful, radiant glow that I never had before. The results are so
-                                        natural, and my skin has never felt better. Thank you, Kimaya, for this
-                                        confidence boost!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider: Slide 5 -->
-
-                        <div class="booking-slider__slide swiper-slide">
-                            <div class="booking-slider__item booking-slider-item">
-
-
-                                <a title="Luxury Detached Home in Bournemouth" href="/"
-                                    class="booking-slider-item__image" onclick="event.preventDefault();">
-                                    <img src="./image/slide5.webp" alt="slide5image" />
-                                </a>
-
-                                <div class="booking-slider-item__content">
-                                    <p>I’ve tried so many facials, but nothing compares to the MediFacial at Kimaya. My
-                                        skin felt instantly refreshed, hydrated, and super soft. It’s the perfect skin
-                                        reset, and I love how my face looks radiant and plump. Can’t wait for my next
-                                        session!</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- Slider Pagination -->
-
-                <div class="booking-slider__pagination slider-pagination"></div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -1495,64 +1350,7 @@
         }
     }
 </style>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const sliders = document.querySelectorAll(".booking-slider");
 
-        if (!sliders.length) return;
-
-        const list = [];
-
-        sliders.forEach((element) => {
-            const [slider, prevEl, nextEl, pagination] = [
-                element.querySelector(".swiper"),
-                element.querySelector(".slider-nav__item_prev"),
-                element.querySelector(".slider-nav__item_next"),
-                element.querySelector(".slider-pagination")
-            ];
-
-            list.push(
-                new Swiper(slider, {
-                    slidesPerView: 1.15,
-                    spaceBetween: 20,
-                    slidesOffsetBefore: 20,
-                    slidesOffsetAfter: 20,
-                    speed: 600,
-                    observer: true,
-                    watchOverflow: true,
-                    watchSlidesProgress: true,
-                    navigation: { nextEl, prevEl, disabledClass: "disabled" },
-                    pagination: {
-                        el: pagination,
-                        type: "bullets",
-                        modifierClass: "slider-pagination",
-                        bulletClass: "slider-pagination__item",
-                        bulletActiveClass: "active",
-                        clickable: true
-                    },
-                    breakpoints: {
-                        575: {
-                            slidesPerView: 1.5
-                        },
-                        992: {
-                            slidesPerView: 2,
-                            slidesOffsetBefore: 0,
-                            slidesOffsetAfter: 0
-                        },
-                        1366: {
-                            slidesPerView: 3,
-                            spaceBetween: 40,
-                            slidesOffsetBefore: 0,
-                            slidesOffsetAfter: 0
-                        }
-                    }
-                })
-            );
-        });
-    });
-
-</script>
-<!-- ---end slider frame------------ -->
 
 
 
@@ -1607,7 +1405,7 @@
 
 </div>
 
-<div class="container">
+<div class="container my-5">
 
     <div class="row">
         <div class="col-md-6 mx-auto book_app" id="book_app_id">
@@ -1669,151 +1467,7 @@
     }
 </style>
 <!-- ---start FAQ frame------------ -->
-<div class="container" id="faqframe">
-    <h1>FAQ’s</h1>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Laser Hair Removal
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. Is laser hair removal permanent?</strong>
-                    <p>Laser hair removal significantly reduces hair growth, and in many cases, results in permanent
-                        hair reduction. However, occasional maintenance sessions may be needed.</p>
-                    <strong>2. How many sessions do I need for best results?</strong>
-                    <p>Most clients require 6-8 sessions depending on hair type, skin tone, and the area being treated.
-                    </p>
-                    <strong>3. Does laser hair removal hurt?</strong>
-                    <p>The treatment is virtually painless, with only a mild warming sensation. Advanced cooling
-                        technology ensures maximum comfort.</p>
-                    <strong>4. Is it safe for all skin types?</strong>
-                    <p>Yes! Our laser technology is safe and effective for all skin tones and hair types.</p>
-                    <strong>5. Are there any side effects?</strong>
-                    <p>Temporary redness or slight swelling may occur but usually subsides within a few hours.</p>
 
-
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Glutathione IV
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. What is Glutathione IV therapy?</strong>
-                    <p>Glutathione IV is a powerful antioxidant treatment that detoxifies the body, boosts the immune
-                        system, and brightens the skin.</p>
-                    <strong>2. How does it improve skin?</strong>
-                    <p>It helps reduce pigmentation, dark spots, and dullness, giving you a radiant, even skin tone.</p>
-                    <strong>3. How many sessions do I need for visible results?</strong>
-                    <p>Most clients see improvements within 4-6 sessions, but results vary based on individual skin
-                        conditions.</p>
-                    <strong>4. Is Glutathione IV safe?</strong>
-                    <p>Yes, it is completely safe when administered by professionals.</p>
-                    <strong>5. Can it be combined with other treatments?</strong>
-                    <p>Yes! Glutathione IV works well with PRP, laser treatments, and facials for enhanced skin health.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Hair Regrowth Treatment
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. How does Hair Regrowth Treatment help with hair loss?</strong>
-                    <p>Hair Regrowth Treatment (Platelet-Rich Plasma) is extracted from your own blood and injected into
-                        the scalp to stimulate hair follicles, strengthen roots, and promote regrowth.</p>
-                    <strong>2. How many Hair Regrowth Treatment sessions are needed for hair regrowth?</strong>
-                    <p>A minimum of 3-6 sessions, spaced 4 weeks apart, is recommended for visible improvements.</p>
-                    <strong>3. Is Hair Regrowth Treatment treatment painful?</strong>
-                    <p>Hair Regrowth Treatment involves minimal discomfort, and a numbing cream is applied to make the
-                        procedure comfortable.</p>
-                    <strong>4. Are the results permanent?</strong>
-                    <p>Hair Regrowth Treatment slows hair loss and stimulates new growth, but maintenance sessions may
-                        be needed.</p>
-                    <strong>5. Can Hair Regrowth Treatment be combined with other treatments?</strong>
-                    <p>Yes! Hair Regrowth Treatment works best when combined with laser therapy, medications, or hair
-                        growth serums.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                    Face Rejuvenation Therapy
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. What is a Face Rejuvenation Therapy?</strong>
-                    <p>Hair Regrowth Treatment facial uses your own plasma to boost collagen production, reduce fine
-                        lines, and improve skin texture.</p>
-                    <strong>2. What are the benefits of Face Rejuvenation Therapy?</strong>
-                    <p>
-                    <ul>
-                        <li>Reduces fine lines and wrinkles</li>
-                        <li>Improves skin elasticity and texture</li>
-                        <li>Minimizes acne scars and pigmentation</li>
-                        <li>Promotes a radiant, youthful glow</li>
-                    </ul>
-                    </p>
-                    <strong>3. How many Face Rejuvenation Therapy sessions do I need?</strong>
-                    <p>For best results, 3-4 sessions are recommended.</p>
-                    <strong>4. Is there downtime after Face Rejuvenation Therapy?</strong>
-                    <p>There is minimal downtime. Expect slight redness for 24-48 hours before your skin starts glowing!
-                    </p>
-                    <strong>5. Who is the best candidate for Face Rejuvenation Therapy?</strong>
-                    <p>Anyone looking to rejuvenate skin, improve texture, and reduce signs of aging is a great
-                        candidate.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                    Advanced Glow Facial
-                </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. How is a Advanced Glow Facial different from a regular facial?</strong>
-                    <p>Unlike regular facials, MediFacials use advanced skincare technology and medical-grade products
-                        for deeper hydration and rejuvenation.</p>
-                    <strong>2. What skin concerns does a Advanced Glow Facialtreat?</strong>
-                    <p>
-                    <ul>
-                        <li>Dry and dull skin</li>
-                        <li>Acne and pigmentation</li>
-                        <li>Uneven texture and fine lines</li>
-                    </ul>
-                    </p>
-                    <strong>3. How often should I get a Advanced Glow Facial?</strong>
-                    <p>Every 4-6 weeks for long-lasting skin health and glow.</p>
-                    <strong>4. Is there any downtime?</strong>
-                    <p>No! You can return to your routine immediately after the session.</p>
-                    <strong>5. Can I combine a Advanced Glow Facial with other treatments?</strong>
-                    <p>Yes! It pairs well with Hair Regrowth Treatment, laser treatments, and chemical peels for
-                        enhanced skin rejuvenation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <style>
     #faqframe {
         margin: 3rem auto;
@@ -1840,52 +1494,80 @@
     }
 </style>
 <!-- ---end FAQ frame------------ -->
-<!-- ---start counter frame------------ -->
-<div class="background-container" id="counterframe">
-    <div class="content">
-        <div class="row">
-            <div class="column" id="colunm1">
-                <p style="visibility:hidden">Offer Expires in</p>
-                <h1 class="text">Special Discount</h1>
-                <button type="button" class="btn btn-secondary" id="limitbutton">Limited Time Only!</button>
-            </div>
-            <div class="column" id="colunm2">
-                <p>Offer Expires in</p>
-                <div class="clock-container">
-                    <div class="clock-col" style="display:none">
-                        <div class="clock-days clock-timer">&nbsp;</div>
-                        <div class="clock-label label-days">
-                            Days
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-hours clock-timer">&nbsp;</div>
-                        <div class="clock-label label-hour">
-                            Hours
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-minutes clock-timer">&nbsp;</div>
-                        <div class="clock-label label-minutes">
-                            Minutes
-                        </div>
-                    </div>
-                    <div class="clock-col">
-                        <div class="clock-seconds clock-timer">&nbsp;</div>
-                        <div class="clock-label label-seconds">
-                            Seconds
-                        </div>
-                    </div>
-                    <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
-                        Appointment</a>
+<!-- Background Overlay -->
+<div id="popupOverlay"></div>
+
+<!-- Popup Content -->
+<div class="row" id="coutpop">
+    <div class="col-md-12 mx-auto">
+        <div class="column" id="colunm2">
+            <span id="closePopup" class="close-btn">&times;</span> <!-- Close Button -->
+            <p>Offer Expires in</p>
+            <div class="clock-container">
+                <div class="clock-col" style="display:none">
+                    <div class="clock-days clock-timer">&nbsp;</div>
+                    <div class="clock-label label-days">Days</div>
                 </div>
-
+                <div class="clock-col">
+                    <div class="clock-hours clock-timer">&nbsp;</div>
+                    <div class="clock-label label-hour">Hours</div>
+                </div>
+                <div class="clock-col">
+                    <div class="clock-minutes clock-timer">&nbsp;</div>
+                    <div class="clock-label label-minutes">Minutes</div>
+                </div>
+                <div class="clock-col">
+                    <div class="clock-seconds clock-timer">&nbsp;</div>
+                    <div class="clock-label label-seconds">Seconds</div>
+                </div>
+                <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
+                    Appointment</a>
             </div>
-
         </div>
     </div>
 </div>
+
 <style>
+    /* Background Overlay */
+    #popupOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        /* Black with 70% transparency */
+        z-index: 999;
+        /* Below the popup but above everything else */
+        display: none;
+        /* Initially hidden */
+    }
+
+    /* Popup Box */
+    #coutpop {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        z-index: 1000;
+        /* Above the overlay */
+        display: none;
+        /* Initially hidden */
+    }
+
+    /* Close Button */
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
     .column p {
         margin-top: 20px;
         margin-bottom: -35px;
