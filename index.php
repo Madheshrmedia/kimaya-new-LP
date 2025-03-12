@@ -487,9 +487,10 @@
         }
 
         .card-footer {
-            background: #EFD78A;
+            background: #AF6503;
             border-bottom-left-radius: 13px !important;
             border-bottom-right-radius: 13px !important;
+            color: #FFFFFF !important;
         }
 
         .navbar-toggler {
@@ -622,63 +623,86 @@
     </div>
 
     <!-- This could be you! -->
+    <style>
+        #testimonial {
+            text-align: center;
+        }
 
-    <div class="container-fluid my-5 this_testimonial" id="testimonial">
-        <div class="row p-5">
-            <h1>This could be you!</h1>
+        #testimonialrow {
+            margin-top: 2rem;
+        }
 
-            <div class="col-md-4 my-auto tis_test_col">
+        .card-body {
+            text-align: left;
+        }
+
+        .card-img-top {
+            width: 135px !important;
+        }
+
+        .card-footer {
+            padding: 1rem;
+        }
+
+        @media (max-width:768px) {
+            .tis_test_col {
+                margin-top: 1rem;
+            }
+        }
+    </style>
+    <div class="container-fluid my-5 " id="testimonial">
+        <h1>Review</h1>
+
+        <div class="row p-5 ">
+
+            <div class="col-md-4  tis_test_col">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc1.webp" alt="Card image cap">
+                    <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">Having wonderful experiences with the clinic stating off
-                            with my nails
-                            which always i get flawless and beautiful nails by Jenni akka my saviour. Seconding about
-                            skin treatments where I struggled with my acne for years didn’t find solution and not
-                            believed any treatments too. But the skin peeling treatment showed my skin which I use to
-                            have during my school days. Thanks kimaya!</p>
+                        <p class="card-text tis_test_card_txt ">The Brightening Peel made my skin glow! My dark spots
+                            have lightened,
+                            and my skin looks so much healthier. I love the results and will definitely be coming back
+                            for more treatments!<span style="visibility:hidden">fdsffsfdsdffdsf</span></p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci1.png" class="tis_tci" alt="">
-                        <p class="ps-3">- Shruthi Chandrasekar </p>
+                        <p class="ps-3"> — Shalini P </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tis_test_col my-auto">
+            <div class="col-md-4 tis_test_col ">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc2.webp" alt="Card image cap">
+                    <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I just had the most amazing facial experience! From
-                            start to finish, it was pure relaxation. The esthetician was knowledgeable and tailored the
-                            treatment to suit my skin type. My skin feels rejuvenated, hydrated, and so much smoother.
-                            The products used were high-quality and left a lovely glow without any irritation. It’s like
-                            my face got a fresh start! I highly recommend this facial to anyone looking to pamper
-                            themselves and give their skin the care it deserves.</p>
+                        <p class="card-text tis_test_card_txt ">I’ve struggled with acne for years, but the Acne Control
+                            Peel has helped
+                            clear my skin. My breakouts are fewer,
+                            and my complexion is smoother. I’m so happy with the progress I’ve seen.</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci2.webp" class="tis_tci" alt="">
-                        <p class="ps-3">-Preethika Palaniswamy</p>
+                        <p class="ps-3">-— Kiran T</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 tis_test_col my-auto">
+            <div class="col-md-4 tis_test_col ">
                 <div class="card tis_test_card">
-                    <img class="card-img-top py-4 px-5" src="./image/ttc3.webp" alt="Card image cap">
+                    <img class="card-img-top py-4 px-5" src="./image/vector.png" alt="Card image cap">
                     <div class="card-body px-5">
 
-                        <p class="card-text tis_test_card_txt ">I came to know about this place through my friend.. Came
-                            here to get consultation for my skin and was super happy with their warm welcome and their
-                            service . Admin Nandhini and Manager Aishwarya was soo professional and helped me with my
-                            package. Highly recommended place for all your skin and hair concern .</p>
+                        <p class="card-text tis_test_card_txt ">I tried the Anti-Aging Peel, and it worked wonders on my
+                            fine lines. My skin feels firmer,
+                            and I can see a visible difference in its texture. I feel like I’ve turned back the clock on
+                            my skin!</p>
 
                     </div>
                     <div class="card-footer d-flex align-items-end text-muted px-5">
                         <img src="./image/ttci3.png" class="tis_tci" alt="">
-                        <p class="ps-3">-A R M Vicky</p>
+                        <p class="ps-3">— Meena J</p>
                     </div>
                 </div>
             </div>
@@ -743,6 +767,190 @@
         background: #CDB167;
     }
 </style>
+<!-- ---choose kimaya------------ -->
+<style>
+    #choosecontainer {
+        text-align: center;
+    }
+
+    #choosecontainer .card {
+        border: none;
+    }
+
+    #choosecontainer .card-img-top {
+        margin: auto;
+    }
+
+    #choosecontainer .card-title {
+        text-align: center;
+        color: rgba(18, 33, 50, 0.8);
+    }
+
+    #choosecontainer .row {
+        margin-top: 3rem;
+    }
+
+    #kimroundlogo {
+        margin-bottom: 20px;
+    }
+</style>
+<div class="container" id="choosecontainer">
+    <h1>Why choose Kimaya?</h1>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 100%;">
+                <img src="./image/card1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Certified doctors </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 100%;">
+                <img src="./image/Capa_1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">10+ years of expertise </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 100%;">
+                <img src="./image/Frame.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">5K+ happy clinets</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 100%;">
+                <img src="./image/fi_1365307.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">4.9 Google rating</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 220px;margin: auto;">
+                <img src="./image/kimroundlogo.webp" id="kimroundlogo">
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="card" style="width: 100%; ">
+                <img src="./image/fi_4807695.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Treatments are performed by doctors</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---start FAQ frame------------ -->
+<div class="container" id="faqframe">
+    <h1>FAQ’s</h1>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Is laser hair removal permanent?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Laser hair removal significantly reduces hair growth and can lead to permanent
+                        results with multiple sessions. However, occasional maintenance sessions may be needed.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How many sessions do I need?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Most people require 6-8 sessions, depending on hair type, skin tone, and the area being treated
+                        for the best results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is it safe for all skin types?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Yes! Advanced laser technology is customized for different skin tones, making it safe and
+                        effective for all skin types.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    What areas can be treated?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Laser hair removal can be done on any part of the body, including the face, legs, arms,
+                        underarms, bikini area, and full body.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    How long can I avail this service, and how many sessions will I get?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Our laser hair removal package includes unlimited sessions and is valid for 3 years when you
+                        choose the ₹49,999 package. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    #faqframe {
+        margin: 3rem auto;
+    }
+
+    .accordion {
+        margin-top: 3rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #DDAB07;
+        box-shadow: none;
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .accordion-body {
+        font-size: 19px;
+    }
+
+    .accordion-button {
+        font-size: 25px;
+    }
+</style>
+<!-- ---end FAQ frame------------ -->
 <!-- ---start slider frame------------ -->
 <div class="container">
     <h1>Glow Stories from Our Clients</h1>
@@ -1630,82 +1838,53 @@
     .accordion-button {
         font-size: 25px;
     }
-
-    /* Popup Box */
-    #coutpop {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        z-index: 1000;
-        /* Above the overlay */
-        display: none;
-        /* Initially hidden */
-    }
-
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    #popupOverlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        /* Black with 70% transparency */
-        z-index: 999;
-        /* Below the popup but above everything else */
-        display: none;
-        /* Initially hidden */
-    }
 </style>
 <!-- ---end FAQ frame------------ -->
-
-
-<!-- counter popup -->
-
-<div id="popupOverlay"></div>
-
-<div class="row" id="coutpop">
-    <div class="col-md-12 mx-auto">
-        <div class="column" id="colunm2">
-            <span id="closePopup" class="close-btn">&times;</span> <!-- Close Button -->
-            <p>Offer Expires in</p>
-            <div class="clock-container">
-                <div class="clock-col" style="display:none">
-                    <div class="clock-days clock-timer">&nbsp;</div>
-                    <div class="clock-label label-days">Days</div>
-                </div>
-                <div class="clock-col">
-                    <div class="clock-hours clock-timer">&nbsp;</div>
-                    <div class="clock-label label-hour">Hours</div>
-                </div>
-                <div class="clock-col">
-                    <div class="clock-minutes clock-timer">&nbsp;</div>
-                    <div class="clock-label label-minutes">Minutes</div>
-                </div>
-                <div class="clock-col">
-                    <div class="clock-seconds clock-timer">&nbsp;</div>
-                    <div class="clock-label label-seconds">Seconds</div>
-                </div>
-                <a type="button" href="./#book_app_id" class="btn btn-secondary" style=" bottom: -10px;"
-                    id="bookbutton">Book an
-                    Appointment</a>
+<!-- ---start counter frame------------ -->
+<div class="background-container" id="counterframe">
+    <div class="content">
+        <div class="row">
+            <div class="column" id="colunm1">
+                <p style="visibility:hidden">Offer Expires in</p>
+                <h1 class="text">Special Discount</h1>
+                <button type="button" class="btn btn-secondary" id="limitbutton">Limited Time Only!</button>
             </div>
+            <div class="column" id="colunm2">
+                <p>Offer Expires in</p>
+                <div class="clock-container">
+                    <div class="clock-col" style="display:none">
+                        <div class="clock-days clock-timer">&nbsp;</div>
+                        <div class="clock-label label-days">
+                            Days
+                        </div>
+                    </div>
+                    <div class="clock-col">
+                        <div class="clock-hours clock-timer">&nbsp;</div>
+                        <div class="clock-label label-hour">
+                            Hours
+                        </div>
+                    </div>
+                    <div class="clock-col">
+                        <div class="clock-minutes clock-timer">&nbsp;</div>
+                        <div class="clock-label label-minutes">
+                            Minutes
+                        </div>
+                    </div>
+                    <div class="clock-col">
+                        <div class="clock-seconds clock-timer">&nbsp;</div>
+                        <div class="clock-label label-seconds">
+                            Seconds
+                        </div>
+                    </div>
+                    <a type="button" href="./#book_app_id" class="btn btn-secondary" id="bookbutton">Book an
+                        Appointment</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
-
 <style>
     .column p {
         margin-top: 20px;
