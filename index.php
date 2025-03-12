@@ -1348,6 +1348,8 @@
 
 
 
+
+
 <style>
     .book_app {
         border: 1px solid #DDAB07;
@@ -1355,6 +1357,47 @@
         padding: 30px;
     }
 </style>
+
+<!-- other services -->
+
+<div class="container other_service my-5">
+
+    <h1 class="oserhead mb-5">
+        Glow with our other Services
+    </h1>
+
+    <!-- Swiper -->
+    <div class="swiper slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="./#book_app_id">
+                    <img src="./image/oser1.webp" alt="top aesthetic clinic in chennai" class="img-fluid banner_img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="./#book_app_id">
+                    <img src="./image/oser2.webp" alt="top aesthetic clinic in chennai" class="img-fluid banner_img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="./#book_app_id">
+                    <img src="./image/oser3.webp" alt="top aesthetic clinic in chennai" class="img-fluid banner_img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="./#book_app_id">
+                    <img src="./image/oser4.webp" alt="top aesthetic clinic in chennai" class="img-fluid banner_img">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="./#book_app_id">
+                    <img src="./image/oser5.webp" alt="top aesthetic clinic in chennai" class="img-fluid banner_img">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <div class="container">
 
@@ -1871,6 +1914,32 @@
             prevEl: ".swiper-button-prev",
         },
 
+    });
+
+    var swiper = new Swiper(".slider", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 3000, // 6 seconds interval
+            disableOnInteraction: false, // Keeps autoplay active after user interaction
+            pauseOnMouseEnter: true, // Autoplay will pause on hover
+        },
+
+        breakpoints: {
+            // When the viewport is 768px or larger
+            768: {
+                slidesPerView: 4, // Show 3 slides per view
+            },
+            // When the viewport is 576px or larger
+            576: {
+                slidesPerView: 2, // Show 2 slides per view
+            },
+            // When the viewport is less than 576px (mobile devices)
+            0: {
+                slidesPerView: 1, // Show 1 slide per view on mobile
+            }
+        }
     });
 
     var swiper = new Swiper(".aesthetic_slider", {
