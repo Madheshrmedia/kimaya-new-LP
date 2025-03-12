@@ -608,13 +608,13 @@
                 Before and After Transformations
             </h1>
 
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-5">
                 <img src="./image/ba1.webp" class="img-fluid" alt="best aesthetic clinic">
             </div>
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-5">
                 <img src="./image/ba2.webp" class="img-fluid" alt="top aesthetic clinic">
             </div>
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-5">
                 <img src="./image/ba3.webp" class="img-fluid" alt="top aesthetic clinic">
             </div>
 
