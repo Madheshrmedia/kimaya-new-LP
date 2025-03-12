@@ -634,7 +634,15 @@
     text-align:left;
    } 
 .card-img-top {
-    width: 35% !important;
+    width: 135px !important;
+}
+.card-footer{
+    padding: 1rem;
+}
+@media (max-width:768px){
+    .tis_test_col {
+        margin-top:1rem;
+    }
 }
 </style>
     <div class="container-fluid my-5 " id="testimonial">
@@ -749,6 +757,178 @@
         background: #CDB167;
     }
 </style>
+<!-- ---choose kimaya------------ -->
+ <style>
+    #choosecontainer{
+        text-align:center;
+    }
+    #choosecontainer .card{
+border: none;
+    }
+    #choosecontainer .card-img-top{
+margin:auto;
+    }
+    #choosecontainer .card-title{
+        text-align:center;
+        color: rgba(18, 33, 50, 0.8);
+    }
+    #choosecontainer .row{
+        margin-top:3rem;
+    }
+ </style>
+ <div class="container" id="choosecontainer">
+ <h1>Why choose Kimaya?</h1>
+ <div class="row">
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 100%;">
+  <img src="./image/card1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Certified doctors </h5>
+  </div>
+</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 100%;">
+  <img src="./image/Capa_1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">10+ years of expertise </h5>
+  </div>
+</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 100%;">
+  <img src="./image/Frame.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">5K+ happy clinets</h5>
+  </div>
+</div>
+    </div>
+ </div>
+ <div class="row">
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 100%;">
+  <img src="./image/fi_1365307.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">4.9 Google rating</h5>
+  </div>
+</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 50%;margin: auto;">
+  <img src="./image/kimroundlogo.webp" >
+
+</div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+    <div class="card" style="width: 100%; ">
+  <img src="./image/fi_4807695.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Treatments are performed by doctors</h5>
+  </div>
+</div>
+    </div>
+ </div>
+ </div>
+ <!-- ---start FAQ frame------------ -->
+<div class="container" id="faqframe">
+    <h1>FAQ’s</h1>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Is laser hair removal permanent?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Laser hair removal significantly reduces hair growth and can lead to permanent 
+                    results with multiple sessions. However, occasional maintenance sessions may be needed.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How many sessions do I need?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+              <p>Most people require 6-8 sessions, depending on hair type, skin tone, and the area being treated for the best results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is it safe for all skin types?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Yes! Advanced laser technology is customized for different skin tones, making it safe and effective for all skin types.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    What areas can be treated?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   <p>Laser hair removal can be done on any part of the body, including the face, legs, arms, underarms, bikini area, and full body.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    How long can I avail this service, and how many sessions will I get?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   <p>Our laser hair removal package includes unlimited sessions and is valid for 3 years when you choose the ₹49,999 package. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    #faqframe {
+        margin: 3rem auto;
+    }
+
+    .accordion {
+        margin-top: 3rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #DDAB07;
+        box-shadow: none;
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .accordion-body {
+        font-size: 19px;
+    }
+
+    .accordion-button {
+        font-size: 25px;
+    }
+</style>
+<!-- ---end FAQ frame------------ -->
 <!-- ---start slider frame------------ -->
 <div class="container">
     <h1>Glow Stories from Our Clients</h1>
@@ -1466,178 +1646,7 @@
         border-radius: 0 !important;
     }
 </style>
-<!-- ---start FAQ frame------------ -->
-<div class="container" id="faqframe">
-    <h1>FAQ’s</h1>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Laser Hair Removal
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. Is laser hair removal permanent?</strong>
-                    <p>Laser hair removal significantly reduces hair growth, and in many cases, results in permanent
-                        hair reduction. However, occasional maintenance sessions may be needed.</p>
-                    <strong>2. How many sessions do I need for best results?</strong>
-                    <p>Most clients require 6-8 sessions depending on hair type, skin tone, and the area being treated.
-                    </p>
-                    <strong>3. Does laser hair removal hurt?</strong>
-                    <p>The treatment is virtually painless, with only a mild warming sensation. Advanced cooling
-                        technology ensures maximum comfort.</p>
-                    <strong>4. Is it safe for all skin types?</strong>
-                    <p>Yes! Our laser technology is safe and effective for all skin tones and hair types.</p>
-                    <strong>5. Are there any side effects?</strong>
-                    <p>Temporary redness or slight swelling may occur but usually subsides within a few hours.</p>
 
-
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Glutathione IV
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. What is Glutathione IV therapy?</strong>
-                    <p>Glutathione IV is a powerful antioxidant treatment that detoxifies the body, boosts the immune
-                        system, and brightens the skin.</p>
-                    <strong>2. How does it improve skin?</strong>
-                    <p>It helps reduce pigmentation, dark spots, and dullness, giving you a radiant, even skin tone.</p>
-                    <strong>3. How many sessions do I need for visible results?</strong>
-                    <p>Most clients see improvements within 4-6 sessions, but results vary based on individual skin
-                        conditions.</p>
-                    <strong>4. Is Glutathione IV safe?</strong>
-                    <p>Yes, it is completely safe when administered by professionals.</p>
-                    <strong>5. Can it be combined with other treatments?</strong>
-                    <p>Yes! Glutathione IV works well with PRP, laser treatments, and facials for enhanced skin health.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Hair Regrowth Treatment
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. How does Hair Regrowth Treatment help with hair loss?</strong>
-                    <p>Hair Regrowth Treatment (Platelet-Rich Plasma) is extracted from your own blood and injected into
-                        the scalp to stimulate hair follicles, strengthen roots, and promote regrowth.</p>
-                    <strong>2. How many Hair Regrowth Treatment sessions are needed for hair regrowth?</strong>
-                    <p>A minimum of 3-6 sessions, spaced 4 weeks apart, is recommended for visible improvements.</p>
-                    <strong>3. Is Hair Regrowth Treatment treatment painful?</strong>
-                    <p>Hair Regrowth Treatment involves minimal discomfort, and a numbing cream is applied to make the
-                        procedure comfortable.</p>
-                    <strong>4. Are the results permanent?</strong>
-                    <p>Hair Regrowth Treatment slows hair loss and stimulates new growth, but maintenance sessions may
-                        be needed.</p>
-                    <strong>5. Can Hair Regrowth Treatment be combined with other treatments?</strong>
-                    <p>Yes! Hair Regrowth Treatment works best when combined with laser therapy, medications, or hair
-                        growth serums.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                    Face Rejuvenation Therapy
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. What is a Face Rejuvenation Therapy?</strong>
-                    <p>Hair Regrowth Treatment facial uses your own plasma to boost collagen production, reduce fine
-                        lines, and improve skin texture.</p>
-                    <strong>2. What are the benefits of Face Rejuvenation Therapy?</strong>
-                    <p>
-                    <ul>
-                        <li>Reduces fine lines and wrinkles</li>
-                        <li>Improves skin elasticity and texture</li>
-                        <li>Minimizes acne scars and pigmentation</li>
-                        <li>Promotes a radiant, youthful glow</li>
-                    </ul>
-                    </p>
-                    <strong>3. How many Face Rejuvenation Therapy sessions do I need?</strong>
-                    <p>For best results, 3-4 sessions are recommended.</p>
-                    <strong>4. Is there downtime after Face Rejuvenation Therapy?</strong>
-                    <p>There is minimal downtime. Expect slight redness for 24-48 hours before your skin starts glowing!
-                    </p>
-                    <strong>5. Who is the best candidate for Face Rejuvenation Therapy?</strong>
-                    <p>Anyone looking to rejuvenate skin, improve texture, and reduce signs of aging is a great
-                        candidate.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                    Advanced Glow Facial
-                </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>1. How is a Advanced Glow Facial different from a regular facial?</strong>
-                    <p>Unlike regular facials, MediFacials use advanced skincare technology and medical-grade products
-                        for deeper hydration and rejuvenation.</p>
-                    <strong>2. What skin concerns does a Advanced Glow Facialtreat?</strong>
-                    <p>
-                    <ul>
-                        <li>Dry and dull skin</li>
-                        <li>Acne and pigmentation</li>
-                        <li>Uneven texture and fine lines</li>
-                    </ul>
-                    </p>
-                    <strong>3. How often should I get a Advanced Glow Facial?</strong>
-                    <p>Every 4-6 weeks for long-lasting skin health and glow.</p>
-                    <strong>4. Is there any downtime?</strong>
-                    <p>No! You can return to your routine immediately after the session.</p>
-                    <strong>5. Can I combine a Advanced Glow Facial with other treatments?</strong>
-                    <p>Yes! It pairs well with Hair Regrowth Treatment, laser treatments, and chemical peels for
-                        enhanced skin rejuvenation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<style>
-    #faqframe {
-        margin: 3rem auto;
-    }
-
-    .accordion {
-        margin-top: 3rem;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: #DDAB07;
-        box-shadow: none;
-        color: #FFFFFF;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .accordion-body {
-        font-size: 19px;
-    }
-
-    .accordion-button {
-        font-size: 25px;
-    }
-</style>
-<!-- ---end FAQ frame------------ -->
 <!-- ---start counter frame------------ -->
 <div class="background-container" id="counterframe">
     <div class="content">
